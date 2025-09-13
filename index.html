@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scene 1: Landing -->
+  <div class="scene active" id="scene1">
+    <h1>I coded something special for you… ✨</h1>
+    <button onclick="goToScene(2)">Reveal 💖</button>
+  </div>
+
+  <!-- Scene 2: Fireworks -->
+  <div class="scene" id="scene2">
+    <canvas id="fireworks"></canvas>
+    <h1>You light up my world 💕</h1>
+    <button onclick="goToScene(3)">Next 🎈</button>
+  </div>
+
+  <!-- Scene 3: Balloons -->
+  <div class="scene" id="scene3">
+    <div class="balloon" style="--delay:0s; --pos:0.2">I like you since the day you call my name 🌸</div>
+    <div class="balloon" style="--delay:1s; --pos:0.4">You make my day interesting and exciting 💐</div>
+    <div class="balloon" style="--delay:2s; --pos:0.6">Your the first person that I confess my feelings 🌟</div>
+    <div class="balloon" style="--delay:3s; --pos:0.8">Your amazing your the best and the most beautiful girl I ever meet 💎</div>
+    <h1 class="center-msg">All of this… is you 💖</h1>
+    <button onclick="goToScene(4)">Final Surprise 👉</button>
+  </div>
+
+  <!-- Scene 4: Hearts & Confetti -->
+  <div class="scene" id="scene4">
+    <h1>Will you go out with me? 🥰</h1>
+    <div class="choices">
+      <button class="yes">Yes 💕</button>
+      <button class="yes">Definitely 😍</button>
+    </div>
+    <canvas id="confetti"></canvas>
+    <audio id="bg-music" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
